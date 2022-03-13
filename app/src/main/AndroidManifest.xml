@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LilCare">
         <activity
-            android:name=".loginPage"
+            android:name=".parentLoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".ownerLoginPage"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
