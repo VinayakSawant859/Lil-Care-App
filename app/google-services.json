@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875251623821",
+    "project_id": "lil-care",
+    "storage_bucket": "lil-care.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875251623821:android:3aad2c005cbb919109bfc4",
+        "android_client_info": {
+          "package_name": "com.example.lilcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875251623821-95qic8srj33qhm9pnno4l5ji3fm339dq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhddYIKWKjW4347gLiy8x3FUg9NWnemHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875251623821-95qic8srj33qhm9pnno4l5ji3fm339dq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,parentLoginPage.class);
+                Intent i = new Intent(MainActivity.this, parentRegPage.class);
                 startActivity(i);
                 //hii
             }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         daycare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this,ownerLoginPage.class);
+                Intent i = new Intent(MainActivity.this, ownerLogPage.class);
                 startActivity(i);
 
                 //startActivity(new Intent(MainActivity.this,ownerLoginPage.class));
