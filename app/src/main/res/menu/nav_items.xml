@@ -6,15 +6,15 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
-        android:title="@string/nav_item1" />
+        android:title="@string/nav_item1"
+        />
     <item
-        android:icon="@drawable/ic_childcare"
-        android:title="@string/nav_item2" />
-    <item
+        android:id="@+id/nav_data"
         android:icon="@drawable/ic_data"
-        android:title="@string/nav_item3" />
+        android:title="@string/nav_item2" />
     <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_account"
-        android:title="@string/nav_item4" />
+        android:title="@string/nav_item3" />
+
 </menu>
