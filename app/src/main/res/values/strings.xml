@@ -1,17 +1,10 @@
 <resources>
     <string name="app_name">Lil Care</string>
     <string name="nav_item1">Home</string>
-    <string name="nav_item2">Report</string>
-    <string name="nav_item3">Analysis</string>
-    <string name="nav_item4">Profile</string>
-    <string name="text">·Daycare software that offers an easy to use communication system is one of the top priorities you should look for when choosing a daycare software.
-
-·Daycares probably have many children to look after each day so being able to input data quickly and easily is important. By using the app the staff can spend less time on “paper work” and more time looking after kids.
-
-·If you have an app that can help parents pay for daycare services and schedule payment reminders, it will make it easier for Daycare and the parents of the kids you look after.
-
-·This app provide many new features which will be user friendly and easy to use.</string>
+    <string name="nav_item2">Statistics</string>
+    <string name="nav_item3">Profile</string>
+    <string name="text">·Daycare software that offers an easy to use communication system is one of the top priorities you should look for when choosing a daycare software.\n·Daycare\'s probably have many children to look after each day so being able to input data quickly and easily is important. By using the app the staff can spend less time on “paper work” and more time looking after kids.\n·If you have an app that can help parents pay for daycare services and schedule payment reminders, it will make it easier for Daycare and the parents of the kids you look after.\n·This app provide many new features which will be user friendly and easy to use.</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello fragment</string>
 
 </resources>

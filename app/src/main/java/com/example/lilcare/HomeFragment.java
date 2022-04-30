@@ -44,7 +44,7 @@ public class HomeFragment extends Fragment {
         cardlayout3 = view.findViewById(R.id.cardlayout3);
         cardlayout3.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
-        //btn
+        //Cardview
         CardView btn1= view.findViewById(R.id.expand);
         CardView btn2= view.findViewById(R.id.expand2);
         CardView btn3= view.findViewById(R.id.expand3);

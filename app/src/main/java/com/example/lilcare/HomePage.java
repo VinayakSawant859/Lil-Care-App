@@ -22,6 +22,7 @@ public class HomePage extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
 
+
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -36,6 +37,12 @@ public class HomePage extends AppCompatActivity {
                         case R.id.nav_profile:
                             selectedFragment = new ProfileFragment();
                             break;
+                        case R.id.nav_data:
+                            selectedFragment = new StatisticsFragment();
+                            break;
+//                        case R.id.nav_data:
+//                            selectedFragment = new AboutUs();
+//                            break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
