@@ -3,42 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/drawable-anydpi/ic_account.xml" value="0.242" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/drawable-anydpi/ic_address.xml" value="0.242" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/drawable-anydpi/ic_childcare.xml" value="0.242" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/drawable-anydpi/ic_exit.xml" value="0.2415" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/about_us.xml" value="0.23513513513513515" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_about.xml" value="0.23209459459459458" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_aboutus.xml" value="0.29743589743589743" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_admin_login.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_admin_reg.xml" value="0.2975630611372381" />
-        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_home.xml" value="0.23513513513513515" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_login_page.xml" value="0.33" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_main.xml" value="0.3482789855072464" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_main2.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_owner_login.xml" value="0.25" />
-        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_owner_reg.xml" value="0.25" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_owner_reg.xml" value="0.5" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_parent_log.xml" value="0.33" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_parent_login.xml" value="0.25" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/activity_parent_reg.xml" value="0.33" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/bottom_navigation_menu.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/fragment_profile_page.xml" value="0.22" />
+        <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/fragment_statistics.xml" value="0.33" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/home_page.xml" value="0.25" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/layout/profile_view.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/menu/main_menu.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/menu/nav_items.xml" value="0.2975630611372381" />
         <entry key="..\:/Users/junai/Documents/GitHub/New folder/New Repo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2565" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/drawable/selector.xml" value="0.2745" />
         <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/font/alike_angular.xml" value="0.2573749465583583" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_home.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_home_page.xml" value="0.2214621633176571" />
         <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_login_page.xml" value="0.21205643437366395" />
         <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_main.xml" value="0.2077922077922078" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_parent_log.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_parent_reg.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_profile.xml" value="0.20920502092050208" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/activity_statistic.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/fragment_home.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/fragment_profile_page.xml" value="0.18857142857142858" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/fragment_statistics.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/layout/profile_view.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/menu/main_menu.xml" value="0.2214621633176571" />
-        <entry key="..\:/Users/sawan/AndroidStudioProjects/LilCareApp/app/src/main/res/menu/nav_items.xml" value="0.2214621633176571" />
       </map>
     </option>
   </component>
