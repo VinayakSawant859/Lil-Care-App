@@ -5,5 +5,6 @@
         <item>@font/andika_new_basic</item>
         <item>@font/arvo</item>
         <item>@font/noto_sans</item>
+        <item>@font/ubuntu_mono_bold</item>
     </array>
 </resources>
