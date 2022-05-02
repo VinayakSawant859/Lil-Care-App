@@ -13,36 +13,37 @@
         android:layout_height="300dp"
         android:padding="20dp"
         android:background="@color/light">
+
         <ImageView
             android:id="@+id/profile_img"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/ic_account"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_account" />
 
         <TextView
             android:id="@+id/full_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/andika_new_basic"
-            android:text="@string/app_name"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_toRightOf="@+id/profile_img"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_img"
+            android:fontFamily="@font/andika_new_basic"
             android:includeFontPadding="false"
-            android:layout_marginLeft="10dp"/>
+            android:text="Name"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/full_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profile_img"
             android:fontFamily="@font/andika_new_basic"
             android:includeFontPadding="false"
-            android:text="@string/app_name"
-            android:textSize="14sp"
-            android:layout_below="@id/full_name"
-            android:layout_toRightOf="@+id/profile_img"
-            android:layout_marginLeft="10dp"/>
+            android:text="email"
+            android:textSize="14sp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -129,17 +130,16 @@
                     android:layout_centerInParent="true"/>
 
 
-
                 <TextView
                     android:id="@+id/booking_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="39"
-                    android:textSize="14sp"
+                    android:layout_below="@+id/booking_label"
+                    android:layout_centerHorizontal="true"
                     android:fontFamily="@font/roboto_light"
                     android:includeFontPadding="false"
-                    android:layout_below="@+id/booking_label"
-                    android:layout_centerHorizontal="true"/>
+                    android:text="39"
+                    android:textSize="14sp" />
 
             </RelativeLayout>
 

@@ -34,10 +34,8 @@
 
                 <ImageView
                     android:id="@+id/Parent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:layout_marginRight="5dp"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
                     android:src="@drawable/family"
                     tools:ignore="InvalidId">
 
@@ -49,6 +47,7 @@
                     android:fontFamily="@font/alike_angular"
                     android:text="Parent"
                     android:textColor="@color/black"
+                    android:textStyle="bold"
                     android:textSize="20sp">
 
                 </TextView>
@@ -65,10 +64,8 @@
 
                 <ImageView
                     android:id="@+id/daycare"
-                    android:layout_width="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
                     android:src="@drawable/daycare"/>
 
                 <TextView
@@ -77,6 +74,7 @@
                     android:fontFamily="@font/alike_angular"
                     android:text="Admin"
                     android:textColor="@color/black"
+                    android:textStyle="bold"
                     android:textSize="20sp"/>
 
             </LinearLayout>
@@ -90,7 +88,8 @@
             android:fontFamily="@font/alike_angular"
             android:text="Login As?"
             android:textColor="@color/black"
-            android:textSize="15sp" />
+            android:textStyle="bold"
+            android:textSize="25sp" />
     </LinearLayout>
 
     <ImageView
@@ -130,9 +129,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/alike_angular"
+            android:fontFamily="@font/secular_one"
             android:text="Lil Care"
-            android:textColor="@color/black"
+            android:textColor="#DA000000"
             android:textSize="40sp" />
 
     </LinearLayout>

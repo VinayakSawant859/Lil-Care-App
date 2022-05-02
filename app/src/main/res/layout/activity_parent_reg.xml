@@ -18,7 +18,7 @@
         android:fontFamily="@font/roboto_light"
         android:includeFontPadding="false"
         android:paddingLeft="17sp"
-        android:text="Parent`s Details"
+        android:text="Child`s Details"
         android:textAllCaps="false"
         android:textColor="#874356"
         android:textSize="43sp" />
@@ -44,7 +44,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Who is the Parent?"
+                android:hint="Child's Photo URL"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 app:boxBackgroundColor="#FEC3DE"
@@ -52,20 +52,93 @@
                 app:boxCornerRadiusBottomStart="13dp"
                 app:boxCornerRadiusTopEnd="13dp"
                 app:boxCornerRadiusTopStart="13dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="25"
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/purple_700"
-                app:startIconDrawable="@drawable/ic_person">
+                app:startIconDrawable="@drawable/ic_account">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText1"
-                    android:maxLength="26"
+                    android:id="@+id/childProfile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TL2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Child's Name"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:boxBackgroundColor="#FEC3DE"
+                app:boxCornerRadiusBottomEnd="13dp"
+                app:boxCornerRadiusBottomStart="13dp"
+                app:boxCornerRadiusTopEnd="13dp"
+                app:boxCornerRadiusTopStart="13dp"
+                app:endIconMode="clear_text"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/purple_700"
+                app:startIconDrawable="@drawable/ic_account">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/childName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TL6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Child's Age"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:boxBackgroundColor="#FEC3DE"
+                app:boxCornerRadiusBottomEnd="13dp"
+                app:boxCornerRadiusBottomStart="13dp"
+                app:boxCornerRadiusTopEnd="13dp"
+                app:boxCornerRadiusTopStart="13dp"
+                app:endIconMode="clear_text"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/purple_700"
+                app:startIconDrawable="@drawable/ic_account">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/childAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TL3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Parent/Guardian Name"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:boxBackgroundColor="#FEC3DE"
+                app:boxCornerRadiusBottomEnd="13dp"
+                app:boxCornerRadiusBottomStart="13dp"
+                app:boxCornerRadiusTopEnd="13dp"
+                app:boxCornerRadiusTopStart="13dp"
+                app:endIconMode="clear_text"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/purple_700"
+                app:startIconDrawable="@drawable/ic_account">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/parentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout2"
@@ -81,19 +154,68 @@
                 app:boxCornerRadiusBottomStart="13dp"
                 app:boxCornerRadiusTopEnd="13dp"
                 app:boxCornerRadiusTopStart="13dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="20"
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/purple_700"
                 app:startIconDrawable="@drawable/ic_email">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText2"
-                    android:maxLength="21"
+                    android:id="@+id/parentEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="New Password"
+                app:boxBackgroundColor="#FEC3DE"
+                app:boxCornerRadiusBottomEnd="13dp"
+                app:boxCornerRadiusBottomStart="13dp"
+                app:boxCornerRadiusTopEnd="13dp"
+                app:boxCornerRadiusTopStart="13dp"
+                app:endIconMode="password_toggle"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/purple_700"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/newPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TL5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Confirm Password"
+                app:boxBackgroundColor="#FEC3DE"
+                app:boxCornerRadiusBottomEnd="13dp"
+                app:boxCornerRadiusBottomStart="13dp"
+                app:boxCornerRadiusTopEnd="13dp"
+                app:boxCornerRadiusTopStart="13dp"
+                app:endIconMode="password_toggle"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/purple_700"
+                app:startIconDrawable="@drawable/ic_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -109,46 +231,15 @@
                 app:boxCornerRadiusBottomStart="13dp"
                 app:boxCornerRadiusTopEnd="13dp"
                 app:boxCornerRadiusTopStart="13dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="65"
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/purple_700"
                 app:startIconDrawable="@drawable/ic_address">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText3"
-                    android:maxLength="66"
+                    android:id="@+id/childAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout4"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:hint="Password"
-                app:boxBackgroundColor="#FEC3DE"
-                app:boxCornerRadiusBottomEnd="13dp"
-                app:boxCornerRadiusBottomStart="13dp"
-                app:boxCornerRadiusTopEnd="13dp"
-                app:boxCornerRadiusTopStart="13dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="12"
-                app:endIconMode="password_toggle"
-                app:helperText="Required*"
-                app:helperTextTextColor="@color/purple_700"
-                app:startIconDrawable="@drawable/ic_lock">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText4"
-                    android:maxLength="13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -173,9 +264,9 @@
                 app:startIconDrawable="@drawable/ic_phone">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText5"
+                    android:id="@+id/Phone1"
                     android:layout_width="match_parent"
-                    android:maxLength="11"
+                    android:maxLength="10"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -201,36 +292,8 @@
                 app:startIconDrawable="@drawable/ic_phone">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText6"
-                    android:maxLength="11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout7"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:hint="Phone 3"
-                app:boxBackgroundColor="#FEC3DE"
-                app:boxCornerRadiusBottomEnd="13dp"
-                app:boxCornerRadiusBottomStart="13dp"
-                app:boxCornerRadiusTopEnd="13dp"
-                app:boxCornerRadiusTopStart="13dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="10"
-                app:endIconMode="clear_text"
-                app:helperText="Required*"
-                app:helperTextTextColor="@color/purple_700"
-                app:prefixText="+91"
-                app:startIconDrawable="@drawable/ic_phone">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText7"
-                    android:maxLength="11"
+                    android:id="@+id/Phone2"
+                    android:maxLength="10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -242,23 +305,18 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:hint="Phone 4"
+                android:hint="Any serious medical condition, if any?"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
                 app:boxCornerRadiusBottomStart="13dp"
                 app:boxCornerRadiusTopEnd="13dp"
                 app:boxCornerRadiusTopStart="13dp"
-                app:counterEnabled="true"
-                app:counterMaxLength="10"
                 app:endIconMode="clear_text"
-                app:helperText="Required*"
                 app:helperTextTextColor="@color/purple_700"
-                app:prefixText="+91"
                 app:startIconDrawable="@drawable/ic_phone">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText8"
-                    android:maxLength="11"
+                    android:id="@+id/medicState"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
