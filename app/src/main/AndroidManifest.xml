@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LilCare">
-
-        <activity android:name=".AboutUs"
-            android:parentActivityName=".HomePage"
-            android:exported="false"/>
+        <activity
+            android:name=".AboutUs"
+            android:exported="false"
+            android:parentActivityName=".HomePage" />
         <activity
             android:name=".HomePage"
             android:exported="false" />
