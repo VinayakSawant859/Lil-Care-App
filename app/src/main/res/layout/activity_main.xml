@@ -45,10 +45,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/alike_angular"
-                    android:text="Parent"
+                    android:text="Welcome Parents!"
                     android:textColor="@color/black"
                     android:textStyle="bold"
-                    android:textSize="20sp">
+                    android:textSize="25sp">
 
                 </TextView>
 
@@ -59,37 +59,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical">
-
-
-                <ImageView
-                    android:id="@+id/daycare"
-                    android:layout_width="150dp"
-                    android:layout_height="200dp"
-                    android:src="@drawable/daycare"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/alike_angular"
-                    android:text="Admin"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="20sp"/>
-
-            </LinearLayout>
+                android:orientation="vertical"/>
 
         </LinearLayout>
 
         <TextView
+            android:id="@+id/loginTXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
             android:fontFamily="@font/alike_angular"
-            android:text="Login As?"
+            android:text="Existing user? Login..."
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="25sp" />
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/registerTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/alike_angular"
+            android:text="New Here? Register..."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp" />
     </LinearLayout>
 
     <ImageView

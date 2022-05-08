@@ -9,12 +9,14 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView bgslide, Parent, daycare;
     LinearLayout textsplash, menu;
     Animation bganim, frombottom;
+    TextView loginTXT, registerTXT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bgslide = (ImageView) findViewById(R.id.bgslide);
-        Parent = (ImageView) findViewById(R.id.Parent);
-        daycare = (ImageView) findViewById(R.id.daycare);
+        loginTXT = findViewById(R.id.loginTXT);
+        registerTXT = findViewById(R.id.registerTXT);
         textsplash = (LinearLayout) findViewById(R.id.textsplash);
         menu = (LinearLayout) findViewById(R.id.menu);
 
@@ -37,26 +39,19 @@ public class MainActivity extends AppCompatActivity {
 
         menu.setAnimation(frombottom);
 
-        Parent.setOnClickListener(new View.OnClickListener() {
+        loginTXT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, parentLogPage.class);
-                startActivity(i);
-                //hii
+                startActivity(new Intent(MainActivity.this, parentLogPage.class));
             }
         });
 
-        daycare.setOnClickListener(new View.OnClickListener() {
+        registerTXT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ownerLogPage.class);
-                startActivity(i);
-
-                //startActivity(new Intent(MainActivity.this,ownerLoginPage.class));
-                //hii
+                startActivity(new Intent(MainActivity.this, parentRegPage.class));
             }
         });
-
 
     }
 }
