@@ -33,7 +33,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="32dp"
-        android:hint="PLogin ID"
+        android:hint="Parent's Email"
         app:boxBackgroundColor="#FEC3DE"
         app:boxCornerRadiusBottomEnd="13dp"
         app:boxCornerRadiusBottomStart="13dp"
@@ -50,7 +50,7 @@
         app:startIconDrawable="@drawable/ic_owner">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText1"
+            android:id="@+id/parent_mail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true" />
@@ -80,13 +80,14 @@
         app:startIconDrawable="@drawable/ic_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText2"
+            android:id="@+id/parent_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/parent_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -135,15 +136,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
-        android:backgroundTint="#C25792"
-        android:text="Home"
+        android:backgroundTint="#874356"
+        android:text="About us"
         android:textColor="@color/white"
         app:boxCornerRadiusBottomEnd="13dp"
         app:boxCornerRadiusBottomStart="13dp"
         app:boxCornerRadiusTopEnd="13dp"
         app:boxCornerRadiusTopStart="13dp"
         app:cornerRadius="20dp"
-        app:icon="@drawable/ic_home"
+        app:icon="@drawable/ic_group"
         app:iconTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

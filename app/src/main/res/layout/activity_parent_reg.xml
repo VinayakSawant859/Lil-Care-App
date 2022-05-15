@@ -323,20 +323,20 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/nextbtn"
-                android:layout_marginTop="14dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="25dp"
                 android:backgroundTint="#C25792"
-                app:iconTint="@color/white"
-                android:text="Next"
                 android:hapticFeedbackEnabled="true"
+                android:onClick="nextbtn"
+                android:text="Next"
                 android:textColor="@color/white"
                 app:cornerRadius="20dp"
                 app:icon="@drawable/ic_next"
-                android:layout_marginBottom="25dp"
-                android:layout_marginRight="22dp"
-                >
+                app:iconTint="@color/white">
 
             </com.google.android.material.button.MaterialButton>
 

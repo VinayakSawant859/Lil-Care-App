@@ -1,5 +1,7 @@
 package com.example.lilcare;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class Users {
 
     private String childPhoto;
@@ -33,6 +35,9 @@ public class Users {
         this.Phone2 = Phone2;
         this.pAddress = pAddress;
         this.medicState = medicState;
+    }
+
+    public Users(TextInputEditText childName, TextInputEditText childAge, TextInputEditText childAddress, TextInputEditText parentName, TextInputEditText parentEmail, TextInputEditText confirmPass, TextInputEditText phone1, TextInputEditText phone2) {
     }
 
     public String getChildPhoto() {
