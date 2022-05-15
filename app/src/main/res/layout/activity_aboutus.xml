@@ -5,7 +5,137 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AboutUs">
+    tools:context=".AboutUs"
+    android:background="@drawable/bg_aboutus">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="18dp"
+        app:contentPadding="20dp"
+        android:layout_margin="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            >
+
+            <ImageView
+                android:id="@+id/app_img"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/playstore_icon" />
+
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "@string/app_name"
+                    android:layout_gravity="center"
+                    android:paddingBottom="3dp"
+                    android:textSize="32sp"
+                    android:textColor="@color/purple_500"
+                    android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_name"
+                android:layout_centerHorizontal="true"
+                android:text="Version 1.0.0"
+                android:textSize="18sp"
+                android:textColor="@color/grey"
+                />
+
+            </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+<!--    Card Ends here..-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/expand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expand"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="6dp"
+        app:contentPadding="20dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/light"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/questrial"
+        android:padding="16dp"
+        android:text="@string/aboutus"
+        android:textSize="23sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@id/about"
+        android:layout_width="340dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/expand2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/grey"
+        android:onClick="about"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="6dp"
+        app:contentPadding="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/questrial"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="View In Github"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:src="@drawable/github_64px" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expand2"
+        android:paddingTop="240dp"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/andika_new_basic"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:text="Made With ❤️ By Our Team 🤝"/>
 
 
 

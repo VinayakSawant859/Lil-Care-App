@@ -11,6 +11,8 @@ public class DatabaseClass extends parentRegPage {
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         databaseReference = db.getReference(Users.class.getSimpleName());
     }
+
+    // Firebase is working..
     public Task<Void> add(Users user)
     {
         return databaseReference.push().setValue(user);
