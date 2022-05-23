@@ -11,6 +11,7 @@ import com.example.lilcare.databinding.ActivityParentRegBinding;
 
 public class parentRegPage extends AppCompatActivity {
     ActivityParentRegBinding parentRegBinding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +40,7 @@ public class parentRegPage extends AppCompatActivity {
                         dao.add(user).addOnSuccessListener(suc -> {
                             Toast.makeText(parentRegPage.this, "Record Inserted", Toast.LENGTH_SHORT).show();
                         }).addOnFailureListener(er -> {
-                            Toast.makeText(parentRegPage.this, "" + er.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(parentRegPage.this, "Record Not Inserted" + er.getMessage(), Toast.LENGTH_SHORT).show();
                         });
 
                         Intent i = new Intent(parentRegPage.this, HomePage.class);

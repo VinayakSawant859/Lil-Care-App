@@ -7,17 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ownerLogPage extends AppCompatActivity {
-    Button regforadmin;
+import com.example.lilcare.databinding.ActivityOwnerLoginBinding;
 
+public class ownerLogPage extends AppCompatActivity {
+
+    ActivityOwnerLoginBinding ownerLoginBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_owner_login);
+        ownerLoginBinding = ActivityOwnerLoginBinding.inflate(getLayoutInflater());
+        setContentView(ownerLoginBinding.getRoot());
 
-        regforadmin = (Button) findViewById(R.id.regforadmin);
 
-        regforadmin.setOnClickListener(new View.OnClickListener() {
+        ownerLoginBinding.regforadmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ownerLogPage.this, ownerRegPage.class);

@@ -50,7 +50,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot ds : snapshot.getChildren()){
-                    if (ds.child("parentEmail").getValue().equals("gonsalves@gmail.com")){ //When users login it will capture the email and retrieve its data
+                    if (ds.child("parentEmail").getValue().equals("gonsalves@gmail.com")){
                         Glide.with(binding.profileImg.getContext()).load(ds.child("childPhoto").getValue(String.class)).into(binding.profileImg);
                         binding.fullName.setText(ds.child("childName").getValue(String.class));
                         binding.email.setText(ds.child("parentEmail").getValue(String.class));

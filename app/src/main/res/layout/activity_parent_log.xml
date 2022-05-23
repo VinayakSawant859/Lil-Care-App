@@ -50,7 +50,7 @@
         app:startIconDrawable="@drawable/ic_owner">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText1"
+            android:id="@+id/parentLogID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:singleLine="true" />
@@ -80,13 +80,14 @@
         app:startIconDrawable="@drawable/ic_lock">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText2"
+            android:id="@+id/parentLogPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/parentLogBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

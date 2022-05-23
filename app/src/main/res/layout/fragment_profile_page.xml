@@ -171,9 +171,6 @@
             android:orientation="vertical"
             >
 
-
-
-
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TL2"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
