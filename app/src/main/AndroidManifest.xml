@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.lilcare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -10,26 +17,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LilCare">
         <activity
-            android:name=".AboutUs"
+            android:name=".Activities.AboutUs"
             android:exported="false"
-            android:parentActivityName=".HomePage" />
+            android:parentActivityName=".Activities.HomePage" />
         <activity
-            android:name=".HomePage"
+            android:name=".Activities.HomePage"
             android:exported="false" />
         <activity
-            android:name=".parentLogPage"
+            android:name=".Activities.parentLogPage"
             android:exported="false" />
         <activity
-            android:name=".ownerLogPage"
+            android:name=".Activities.parentRegPage"
             android:exported="false" />
         <activity
-            android:name=".parentRegPage"
-            android:exported="false" />
-        <activity
-            android:name=".ownerRegPage"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,9 +39,20 @@
             </intent-filter>
         </activity>
 
+
+        <service
+            android:name=".Adapters.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

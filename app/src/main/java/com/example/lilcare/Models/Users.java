@@ -1,4 +1,4 @@
-package com.example.lilcare;
+package com.example.lilcare.Models;
 
 public class Users {
 

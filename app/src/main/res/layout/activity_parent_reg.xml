@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login"
-    tools:context=".parentRegPage">
+    tools:context=".Activities.parentRegPage">
 
 
     <TextView
@@ -27,51 +27,60 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textView"
-        >
+        android:layout_below="@id/textView">
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:id="@+id/linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:paddingBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
 
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/childImage"
+                android:layout_width="124dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/boy"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+
+            <com.google.android.material.button.MaterialButton
+            android:id="@+id/choosePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#C25792"
+            android:hapticFeedbackEnabled="true"
+            android:text="Choose Photo"
+            android:elevation="10dp"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_photo_camera_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout1"
+                android:id="@+id/childNameTB"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Child's Photo URL"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                app:boxBackgroundColor="#FEC3DE"
-                app:boxCornerRadiusBottomEnd="13dp"
-                app:boxCornerRadiusBottomStart="13dp"
-                app:boxCornerRadiusTopEnd="13dp"
-                app:boxCornerRadiusTopStart="13dp"
-                app:endIconMode="clear_text"
-                app:helperText="Required*"
-                app:helperTextTextColor="@color/purple_700"
-                app:startIconDrawable="@drawable/ic_account">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/childProfile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:singleLine="true" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/TL2"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
                 android:hint="Child's Name"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
                 app:boxCornerRadiusBottomStart="13dp"
@@ -90,13 +99,13 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/TL6"
+                android:id="@+id/childAgeTB"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Child's Age"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Child's Age"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
                 app:boxCornerRadiusBottomStart="13dp"
@@ -105,7 +114,7 @@
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/purple_700"
-                app:startIconDrawable="@drawable/ic_account">
+                app:startIconDrawable="@drawable/ic_baseline_date_range_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/childAge"
@@ -115,13 +124,13 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/TL3"
+                android:id="@+id/parentNameTB"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Parent/Guardian Name"
-                android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Parent/Guardian Name"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
                 app:boxCornerRadiusBottomStart="13dp"
@@ -130,7 +139,7 @@
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
                 app:helperTextTextColor="@color/purple_700"
-                app:startIconDrawable="@drawable/ic_account">
+                app:startIconDrawable="@drawable/ic_baseline_family_restroom_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/parentName"
@@ -141,13 +150,13 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout2"
+                android:id="@+id/parentEmailTB"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="Email id"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -167,14 +176,13 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout4"
+                android:id="@+id/newPassTB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="New Password"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -194,12 +202,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/TL5"
+                android:id="@+id/confirmPassTB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="Confirm Password"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -219,12 +227,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout3"
+                android:id="@+id/childAddressTB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="Address"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -243,12 +251,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout5"
+                android:id="@+id/Phone1TB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="Phone 1"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -266,17 +274,18 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/Phone1"
                     android:layout_width="match_parent"
-                    android:maxLength="10"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="10" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout6"
+                android:id="@+id/Phone2TB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="Phone 2"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -293,18 +302,19 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/Phone2"
-                    android:maxLength="10"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="10" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout8"
+                android:id="@+id/medicStateTB"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
                 android:hint="Any serious medical condition, if any?"
                 app:boxBackgroundColor="#FEC3DE"
                 app:boxCornerRadiusBottomEnd="13dp"
@@ -313,7 +323,7 @@
                 app:boxCornerRadiusTopStart="13dp"
                 app:endIconMode="clear_text"
                 app:helperTextTextColor="@color/purple_700"
-                app:startIconDrawable="@drawable/ic_phone">
+                app:startIconDrawable="@drawable/ic_baseline_medical_information_24">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/medicState"
@@ -323,20 +333,19 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/nextbtn"
-                android:layout_marginTop="14dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginBottom="25dp"
                 android:backgroundTint="#C25792"
-                app:iconTint="@color/white"
-                android:text="Next"
                 android:hapticFeedbackEnabled="true"
+                android:text="Next"
                 android:textColor="@color/white"
                 app:cornerRadius="20dp"
                 app:icon="@drawable/ic_next"
-                android:layout_marginBottom="25dp"
-                android:layout_marginRight="22dp"
-                >
+                app:iconTint="@color/white">
 
             </com.google.android.material.button.MaterialButton>
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    tools:context=".ProfileFragment">
+    tools:context=".Fragments.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -248,7 +248,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayout2"
+                android:id="@+id/parentLogPassTB"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -429,16 +429,16 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/logout"
                 android:layout_gravity="end"
                 android:layout_width="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="50dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
                 android:paddingTop="15dp"
                 android:paddingBottom="10dp"
-                android:text="Update" />
+                android:text="logout" />
 
         </LinearLayout>
     </ScrollView>

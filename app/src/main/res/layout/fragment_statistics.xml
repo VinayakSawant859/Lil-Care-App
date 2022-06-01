@@ -1,74 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/green"
-    tools:context=".StatisticsFragment">
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
 
-    <androidx.core.widget.NestedScrollView
 
-        android:id="@+id/nestedlayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:clipToPadding="false"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        >
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/expand"
-        android:layout_width="match_parent"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecycle"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="10dp"
-        app:contentPadding="20dp"
-        android:layout_margin="20dp"
-        android:backgroundTint="@color/white"
-        >
-
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            >
-
-            <LinearLayout
-                android:id="@+id/cardlayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:animateLayoutChanges="true">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Data &amp; Analysis"
-                    android:layout_gravity="center"
-                    android:textSize="30sp"
-                    android:textColor="@color/purple_700"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="This Page Will Ungergo A Massive OverHaul.\nChanges will be implemented later.\nStay Tuned!!!!"
-                    android:textSize="22sp"
-                    android:id="@+id/wel_text"
-                    />
-            </LinearLayout></androidx.core.widget.NestedScrollView>
-
-    </androidx.cardview.widget.CardView>
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:id="@+id/expand2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:cardCornerRadius="18dp"-->
-<!--        app:cardElevation="10dp"-->
-<!--        app:contentPadding="20dp"-->
-<!--        android:layout_margin="20dp"-->
-<!--        android:backgroundTint="@color/white"-->
-<!--        />-->
-    </androidx.core.widget.NestedScrollView>
-</RelativeLayout>
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:foregroundGravity="top"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/row_conversation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

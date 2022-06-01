@@ -12,4 +12,11 @@
     <color name="green">#58D68D</color>
     <color name="light">#F3C892</color>
     <color name="dark">#FFF1BD</color>
+    <color name="cardblue">#8FD4F4</color>
+    <color name="babyPink">#D8A8EA</color>
+    <color name="lightRed">#F899a4</color>
+    <color name="daycarePurple">#B788E2</color>
+    <color name="daycareYellow">#f3e5ad</color>
+    <color name="daycareGreen">#b0d989</color>
+    <color name="daycareBG">#F4E8FF</color>
 </resources>

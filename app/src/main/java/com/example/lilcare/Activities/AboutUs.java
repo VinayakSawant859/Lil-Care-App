@@ -1,4 +1,4 @@
-package com.example.lilcare;
+package com.example.lilcare.Activities;
 
 import android.os.Bundle;
 
